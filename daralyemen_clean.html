@@ -1,0 +1,1864 @@
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  
+
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dar Al Yemen Mandi | مطعم مندي دار اليمن</title>
+
+    <meta name="description" content="Authentic Yemeni Mandi in Göteborg. Rated 4.8 stars. Reservations required.">
+
+    
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+
+    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+    <!-- Configuration -->
+
+    <script>
+
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        brand: {
+
+                            red: '#C53030',
+
+                            beige: '#F4E8D0',
+
+                            green: '#1F3D2B',
+
+                            blue: '#005293',
+
+                            yellow: '#FECB00',
+
+                            charcoal: '#2B2B2B',
+
+                            gray: '#F7F7F7'
+
+                        }
+
+                    },
+
+                    fontFamily: {
+
+                        arabic: ['Cairo', 'sans-serif'],
+
+                        heading: ['Poppins', 'sans-serif'],
+
+                        body: ['Inter', 'sans-serif'],
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+
+
+
+    <style>
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+
+            background-color: #F7F7F7;
+
+        }
+
+        .font-arabic {
+
+            font-family: 'Cairo', sans-serif;
+
+        }
+
+        .font-heading {
+
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        
+
+        /* Smooth Scrolling */
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+
+
+
+        /* Custom Scrollbar */
+
+        ::-webkit-scrollbar {
+
+            width: 8px;
+
+        }
+
+        ::-webkit-scrollbar-track {
+
+            background: #f1f1f1; 
+
+        }
+
+        ::-webkit-scrollbar-thumb {
+
+            background: #C53030; 
+
+            border-radius: 4px;
+
+        }
+
+
+
+
+        /* Card Hover Effect */
+
+        .food-card {
+
+            transition: all 0.3s ease;
+
+        }
+
+        .food-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+        }
+
+
+
+
+        /* Arabic Layout Overrides */
+
+        html[dir="rtl"] body {
+
+            font-family: 'Cairo', sans-serif;
+
+        }
+
+        html[dir="rtl"] .font-heading, html[dir="rtl"] .font-body {
+
+            font-family: 'Cairo', sans-serif;
+
+        }
+
+
+
+
+        /* Logo Animation */
+
+        .logo-hover:hover {
+
+            transform: scale(1.05);
+
+        }
+
+
+
+
+        /* Pattern Background */
+
+        .yemeni-pattern {
+
+            background-image: 
+
+                radial-gradient(circle at 20px 20px, #C53030 2px, transparent 2px),
+
+                radial-gradient(circle at 60px 60px, #C53030 2px, transparent 2px);
+
+            background-size: 80px 80px;
+
+            opacity: 0.05;
+
+        }
+
+    </style>
+
+</head>
+
+<body class="text-brand-charcoal antialiased">
+
+
+
+
+    <!-- Navigation -->
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm transition-all duration-300" id="navbar">
+
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+            <!-- Logo -->
+
+            <a href="#" class="flex items-center gap-2 logo-hover group">
+
+                <img src="https://image.qwenlm.ai/public_source/e03a5b62-894e-4502-a344-9e49e65713f6/1f4b8607e-5eb0-4521-aefa-fdf329405050.png" alt="Dar AlYemen Logo" class="h-14 w-auto object-contain transition-transform">
+
+                <div class="hidden lg:block leading-tight ml-2">
+
+                    <h1 class="font-heading font-bold text-brand-green text-lg">DAR AL YEMEN</h1>
+
+                    <p class="font-arabic text-xs text-brand-red font-bold">دار اليمن</p>
+
+                </div>
+
+            </a>
+
+
+
+
+            <!-- Desktop Menu -->
+
+            <div class="hidden lg:flex items-center gap-8 font-heading font-medium text-sm">
+
+                <a href="#home" class="hover:text-brand-red transition-colors" data-i18n="home">Home</a>
+
+                <a href="#menu" class="hover:text-brand-red transition-colors" data-i18n="menu">Menu</a>
+
+                <a href="#story" class="hover:text-brand-red transition-colors" data-i18n="story">Our Story</a>
+
+                <a href="#contact" class="hover:text-brand-red transition-colors" data-i18n="contact">Contact</a>
+
+            </div>
+
+
+
+
+            <!-- Actions -->
+
+            <div class="flex items-center gap-4">
+
+                <!-- Lang Switch -->
+
+                <button onclick="toggleLanguage()" class="flex items-center gap-1 px-3 py-1.5 rounded-full border border-brand-gray hover:bg-brand-gray transition-colors text-xs font-bold">
+
+                    <span id="lang-label">AR</span>
+
+                    <i class="fa-solid fa-globe text-brand-blue"></i>
+
+                </button>
+
+                
+
+                <!-- Cart -->
+
+                <button class="relative p-2 text-brand-green hover:text-brand-red transition-colors">
+
+                    <i class="fa-solid fa-basket-shopping text-xl"></i>
+
+                    <span class="absolute -top-1 -right-1 bg-brand-red text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold">0</span>
+
+                </button>
+
+
+
+
+                <!-- Mobile Menu Btn -->
+
+                <button onclick="toggleMobileMenu()" class="lg:hidden text-brand-green text-2xl">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        
+
+        <!-- Mobile Menu Dropdown -->
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 absolute w-full left-0 shadow-lg">
+
+            <div class="flex flex-col p-4 gap-4 font-heading">
+
+                <a href="#home" class="block py-2 hover:text-brand-red" data-i18n="home">Home</a>
+
+                <a href="#menu" class="block py-2 hover:text-brand-red" data-i18n="menu">Menu</a>
+
+                <a href="#story" class="block py-2 hover:text-brand-red" data-i18n="story">Our Story</a>
+
+                <a href="#contact" class="block py-2 hover:text-brand-red" data-i18n="contact">Contact</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+
+    <section id="home" class="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-gradient-to-br from-brand-beige/30 to-white">
+
+        <!-- Background Pattern -->
+
+        <div class="absolute inset-0 yemeni-pattern pointer-events-none"></div>
+
+        
+
+        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+
+            <div class="order-2 lg:order-1 space-y-6 text-center lg:text-left">
+
+                <span class="inline-block px-4 py-2 bg-brand-green/10 text-brand-green rounded-full text-xs font-bold tracking-wider uppercase" data-i18n="hero_badge">Authentic & Modern</span>
+
+                <h1 class="font-heading text-4xl lg:text-6xl font-bold text-brand-charcoal leading-tight">
+
+                    <span class="block text-brand-red" data-i18n="hero_title_1">Taste Yemen</span>
+
+                    <span data-i18n="hero_title_2">in the heart of Göteborg</span>
+
+                </h1>
+
+                <p class="text-gray-600 text-lg lg:max-w-md mx-auto lg:mx-0 font-body" data-i18n="hero_desc">
+
+                    Experience the warmth of Yemeni hospitality with the simplicity of Scandinavian dining. Authentic spices, traditional recipes, modern presentation.
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+
+                    <a href="#menu" class="px-8 py-3.5 bg-brand-red text-white rounded-lg font-heading font-semibold shadow-lg hover:bg-red-700 transition-all transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
+
+                        <i class="fa-solid fa-bag-shopping"></i>
+
+                        <span data-i18n="cta_order">Order Now</span>
+
+                    </a>
+
+                    <a href="tel:0762221405" class="px-8 py-3.5 bg-white text-brand-green border-2 border-brand-green rounded-lg font-heading font-semibold hover:bg-brand-green hover:text-white transition-all text-center flex items-center justify-center gap-2">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <span>076-222 14 05</span>
+
+                    </a>
+
+                </div>
+
+                
+
+                <!-- Stats -->
+
+                <div class="flex gap-8 justify-center lg:justify-start pt-6 border-t border-gray-200 mt-6">
+
+                    <div class="text-center">
+
+                        <div class="flex items-center justify-center gap-1 text-brand-yellow">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                        <p class="font-heading font-bold text-xl text-brand-green mt-1">4.8</p>
+
+                        <p class="text-xs text-gray-500" data-i18n="stat_rating">Rating</p>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <p class="font-heading font-bold text-2xl text-brand-green">445+</p>
+
+                        <p class="text-xs text-gray-500" data-i18n="stat_reviews">Reviews</p>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <p class="font-heading font-bold text-2xl text-brand-green">100-200<span class="text-sm">kr</span></p>
+
+                        <p class="text-xs text-gray-500" data-i18n="stat_price">Price Range</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="order-1 lg:order-2 relative">
+
+                <div class="absolute -inset-4 bg-brand-yellow/20 rounded-full blur-3xl opacity-50"></div>
+
+                <img src="https://image.qwenlm.ai/public_source/e03a5b62-894e-4502-a344-9e49e65713f6/198f00db1-9e4c-492c-837a-f60bcf2a335f.png" alt="Yemeni Mandi" class="relative rounded-2xl shadow-2xl w-full object-cover aspect-square lg:aspect-[4/3] transform rotate-2 hover:rotate-0 transition-transform duration-500">
+
+                
+
+                <!-- Floating Badge -->
+
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl flex items-center gap-3 animate-pulse" style="animation-duration: 3s;">
+
+                    <div class="bg-brand-green text-white w-12 h-12 rounded-full flex items-center justify-center text-lg">
+
+                        <i class="fa-solid fa-award"></i>
+
+                    </div>
+
+                    <div>
+
+                        <p class="font-bold text-brand-charcoal">Top Rated</p>
+
+                        <p class="text-xs text-gray-500" data-i18n="badge_reviews">In Göteborg</p>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Flag Badge -->
+
+                <div class="absolute -top-4 -right-4 bg-white p-3 rounded-xl shadow-xl flex gap-2">
+
+                    <img src="https://flagcdn.com/w40/ye.png" alt="Yemen" class="w-8 h-6 rounded shadow-sm">
+
+                    <img src="https://flagcdn.com/w40/se.png" alt="Sweden" class="w-8 h-6 rounded shadow-sm">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Features Section -->
+
+    <section class="py-12 bg-white border-y border-gray-100">
+
+        <div class="container mx-auto px-4">
+
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="text-center p-6">
+
+                    <div class="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i class="fa-solid fa-fire-burner text-2xl text-brand-red"></i>
+
+                    </div>
+
+                    <h3 class="font-heading font-bold text-brand-charcoal mb-2" data-i18n="feat_1_title">Traditional Cooking</h3>
+
+                    <p class="text-sm text-gray-500" data-i18n="feat_1_desc">Clay pots & tandoor ovens</p>
+
+                </div>
+
+                <div class="text-center p-6">
+
+                    <div class="w-16 h-16 bg-brand-green/10 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i class="fa-solid fa-leaf text-2xl text-brand-green"></i>
+
+                    </div>
+
+                    <h3 class="font-heading font-bold text-brand-charcoal mb-2" data-i18n="feat_2_title">Fresh Ingredients</h3>
+
+                    <p class="text-sm text-gray-500" data-i18n="feat_2_desc">Locally sourced in Sweden</p>
+
+                </div>
+
+                <div class="text-center p-6">
+
+                    <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i class="fa-solid fa-chair text-2xl text-brand-blue"></i>
+
+                    </div>
+
+                    <h3 class="font-heading font-bold text-brand-charcoal mb-2" data-i18n="feat_3_title">Outdoor Seating</h3>
+
+                    <p class="text-sm text-gray-500" data-i18n="feat_3_desc">Enjoy the weather</p>
+
+                </div>
+
+                <div class="text-center p-6">
+
+                    <div class="w-16 h-16 bg-brand-yellow/20 rounded-full flex items-center justify-center mx-auto mb-4">
+
+                        <i class="fa-solid fa-door-closed text-2xl text-brand-yellow" style="color: #D4A017;"></i>
+
+                    </div>
+
+                    <h3 class="font-heading font-bold text-brand-charcoal mb-2" data-i18n="feat_4_title">Private Dining</h3>
+
+                    <p class="text-sm text-gray-500" data-i18n="feat_4_desc">For special occasions</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Menu Section -->
+
+    <section id="menu" class="py-16 lg:py-24 bg-brand-gray">
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-12">
+
+                <span class="inline-block px-4 py-1 bg-brand-red/10 text-brand-red rounded-full text-xs font-bold tracking-wider uppercase mb-4" data-i18n="menu_badge">Discover</span>
+
+                <h2 class="font-heading text-3xl lg:text-4xl font-bold text-brand-green mb-2" data-i18n="menu_title">Our Menu</h2>
+
+                <div class="w-20 h-1 bg-brand-red mx-auto rounded-full"></div>
+
+                <p class="text-gray-500 mt-4 font-arabic text-lg" data-i18n="menu_subtitle">أطباق يمنية أصيلة</p>
+
+            </div>
+
+
+
+
+            <!-- Filters -->
+
+            <div class="flex flex-wrap justify-center gap-3 mb-10" id="category-filters">
+
+                <button class="filter-btn active px-6 py-2.5 rounded-full border border-brand-red bg-brand-red text-white font-heading text-sm transition-all shadow-md" data-category="all" data-i18n="cat_all">All</button>
+
+                <button class="filter-btn px-6 py-2.5 rounded-full border border-gray-200 bg-white text-gray-600 hover:border-brand-red hover:text-brand-red font-heading text-sm transition-all shadow-sm" data-category="mandi" data-i18n="cat_mandi">Mandi</button>
+
+                <button class="filter-btn px-6 py-2.5 rounded-full border border-gray-200 bg-white text-gray-600 hover:border-brand-red hover:text-brand-red font-heading text-sm transition-all shadow-sm" data-category="zurbian" data-i18n="cat_zurbian">Zurbian</button>
+
+                <button class="filter-btn px-6 py-2.5 rounded-full border border-gray-200 bg-white text-gray-600 hover:border-brand-red hover:text-brand-red font-heading text-sm transition-all shadow-sm" data-category="stew" data-i18n="cat_stew">Stews</button>
+
+                <button class="filter-btn px-6 py-2.5 rounded-full border border-gray-200 bg-white text-gray-600 hover:border-brand-red hover:text-brand-red font-heading text-sm transition-all shadow-sm" data-category="rice" data-i18n="cat_rice">Rice</button>
+
+            </div>
+
+
+
+
+            <!-- Menu Grid -->
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="menu-grid">
+
+                <!-- Items injected via JS -->
+
+            </div>
+
+
+
+
+            <!-- View All Button -->
+
+            <div class="text-center mt-12">
+
+                <a href="https://daryemen.se" target="_blank" class="px-8 py-3 bg-brand-green text-white rounded-lg font-heading font-semibold shadow-lg hover:bg-green-800 transition-all transform hover:-translate-y-1 inline-flex items-center gap-2">
+
+                    <span data-i18n="view_full_menu">View Full Menu Online</span>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Story Section -->
+
+    <section id="story" class="py-16 lg:py-24 bg-white relative overflow-hidden">
+
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brand-red/5 rounded-full blur-3xl"></div>
+
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-brand-green/5 rounded-full blur-3xl"></div>
+
+        
+
+        <div class="container mx-auto px-4 relative z-10">
+
+            <div class="bg-gradient-to-br from-brand-beige/50 to-white rounded-3xl shadow-xl overflow-hidden flex flex-col lg:flex-row border border-brand-beige">
+
+                <div class="lg:w-1/2 relative min-h-[300px] lg:min-h-[500px]">
+
+                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Yemeni Coffee" class="absolute inset-0 w-full h-full object-cover">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-green/60 to-transparent"></div>
+
+                    <div class="absolute bottom-6 left-6 right-6 text-white">
+
+                        <i class="fa-solid fa-mug-hot text-4xl mb-3"></i>
+
+                        <p class="font-arabic text-lg font-bold">القهوة اليمنية الأصيلة</p>
+
+                        <p class="text-sm opacity-90">Authentic Yemeni Coffee</p>
+
+                    </div>
+
+                </div>
+
+                <div class="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
+
+                    <span class="inline-block px-4 py-1 bg-brand-yellow/20 text-brand-charcoal rounded-full text-xs font-bold tracking-wider uppercase mb-4 w-fit" data-i18n="story_badge">Our Heritage</span>
+
+                    <h3 class="font-heading text-2xl lg:text-3xl font-bold text-brand-green mb-4" data-i18n="story_title">Tradition Meets Modernity</h3>
+
+                    <p class="text-gray-600 mb-6 leading-relaxed" data-i18n="story_text">
+
+                        At Dar AlYemen, we believe food is a language. We bring the ancient spices of the Arabian Peninsula to the clean, minimalist tables of Sweden. Our chefs use traditional clay pots (Madara) and tandoor ovens to ensure every bite tells a story of heritage.
+
+                    </p>
+
+                    <div class="bg-brand-red/5 p-4 rounded-lg border-l-4 border-brand-red mb-6">
+
+                        <p class="text-sm text-brand-charcoal font-bold" data-i18n="reservation_notice">
+
+                            <i class="fa-solid fa-circle-info mr-2"></i> Reservations are required for dining in.
+
+                        </p>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-6">
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="w-10 h-10 bg-brand-green text-white rounded-full flex items-center justify-center flex-shrink-0">
+
+                                <i class="fa-solid fa-leaf"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p class="font-bold text-brand-charcoal text-sm" data-i18n="story_feat_1">Fresh Ingredients</p>
+
+                                <p class="text-xs text-gray-500">Locally sourced</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="w-10 h-10 bg-brand-red text-white rounded-full flex items-center justify-center flex-shrink-0">
+
+                                <i class="fa-solid fa-fire"></i>
+
+                            </div>
+
+                            <div>
+
+                                <p class="font-bold text-brand-charcoal text-sm" data-i18n="story_feat_2">Traditional Cooking</p>
+
+                                <p class="text-xs text-gray-500">Clay pots & tandoor</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Testimonials -->
+
+    <section class="py-16 bg-brand-beige/20">
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-12">
+
+                <h2 class="font-heading text-3xl font-bold text-brand-green mb-2" data-i18n="testimonials_title">What Our Customers Say</h2>
+
+                <div class="w-20 h-1 bg-brand-red mx-auto rounded-full"></div>
+
+                <p class="text-gray-500 mt-2">Based on 445+ Google Reviews</p>
+
+            </div>
+
+            
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+                    <div class="flex gap-1 text-brand-yellow mb-4">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4 italic">"The best Mandi I've had outside of Yemen! The spices are authentic and the meat is so tender."</p>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 bg-brand-green/20 rounded-full flex items-center justify-center text-brand-green font-bold">A</div>
+
+                        <div>
+
+                            <p class="font-bold text-sm">Ahmed K.</p>
+
+                            <p class="text-xs text-gray-500">Göteborg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+                    <div class="flex gap-1 text-brand-yellow mb-4">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4 italic">"Finally a place that brings authentic Yemeni food to Sweden. The Saltah is incredible!"</p>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 bg-brand-red/20 rounded-full flex items-center justify-center text-brand-red font-bold">S</div>
+
+                        <div>
+
+                            <p class="font-bold text-sm">Sarah M.</p>
+
+                            <p class="text-xs text-gray-500">Göteborg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+
+                    <div class="flex gap-1 text-brand-yellow mb-4">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4 italic">"Great service, beautiful presentation, and the taste reminds me of home. Highly recommend!"</p>
+
+                    <div class="flex items-center gap-3">
+
+                        <div class="w-10 h-10 bg-brand-blue/20 rounded-full flex items-center justify-center text-brand-blue font-bold">M</div>
+
+                        <div>
+
+                            <p class="font-bold text-sm">Mohammed A.</p>
+
+                            <p class="text-xs text-gray-500">Göteborg</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- CTA Section -->
+
+    <section class="py-16 bg-brand-green relative overflow-hidden">
+
+        <div class="absolute inset-0 opacity-10">
+
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20px 20px, #fff 2px, transparent 2px); background-size: 60px 60px;"></div>
+
+        </div>
+
+        <div class="container mx-auto px-4 text-center relative z-10">
+
+            <h2 class="font-heading text-3xl lg:text-4xl font-bold text-white mb-4" data-i18n="cta_section_title">Ready to Taste Yemen?</h2>
+
+            <p class="text-white/80 mb-8 max-w-xl mx-auto" data-i18n="cta_section_desc">Order now and experience authentic Yemeni cuisine delivered to your door.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+
+                <a href="#menu" class="px-8 py-4 bg-brand-red text-white rounded-lg font-heading font-semibold shadow-lg hover:bg-red-700 transition-all transform hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span data-i18n="cta_order_now">Order Now</span>
+
+                </a>
+
+                <a href="tel:0762221405" class="px-8 py-4 bg-white text-brand-green rounded-lg font-heading font-semibold shadow-lg hover:bg-gray-100 transition-all transform hover:-translate-y-1 inline-flex items-center justify-center gap-2">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <span>076-222 14 05</span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+
+    <footer id="contact" class="bg-brand-charcoal text-white pt-16 pb-8">
+
+        <div class="container mx-auto px-4">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+
+                <!-- Brand -->
+
+                <div class="lg:col-span-2">
+
+                    <div class="flex items-center gap-3 mb-6">
+
+                        <img src="https://image.qwenlm.ai/public_source/e03a5b62-894e-4502-a344-9e49e65713f6/1f4b8607e-5eb0-4521-aefa-fdf329405050.png" alt="Dar AlYemen Logo" class="h-16 w-auto bg-white rounded-lg p-2">
+
+                    </div>
+
+                    <p class="text-gray-400 text-sm mb-6 max-w-sm" data-i18n="footer_desc">
+
+                        Authentic Yemeni cuisine served with Scandinavian simplicity. Visit us for an unforgettable dining experience.
+
+                    </p>
+
+                    <div class="flex gap-4">
+
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-red transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-red transition-colors"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-red transition-colors"><i class="fa-brands fa-tiktok"></i></a>
+
+                        <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-red transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Contact -->
+
+                <div>
+
+                    <h3 class="font-heading font-bold text-brand-yellow mb-4" data-i18n="footer_contact">Contact Us</h3>
+
+                    <ul class="space-y-3 text-gray-400 text-sm">
+
+                        <li class="flex items-start gap-3">
+
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-red"></i>
+
+                            <span>Turbingatan 6, 417 05 Göteborg</span>
+
+                        </li>
+
+                        <li class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-phone text-brand-red"></i>
+
+                            <span>076-222 14 05</span>
+
+                        </li>
+
+                        <li class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-envelope text-brand-red"></i>
+
+                            <span>info@daryemen.se</span>
+
+                        </li>
+
+                        <li class="flex items-center gap-3">
+
+                            <i class="fa-solid fa-globe text-brand-red"></i>
+
+                            <a href="https://daryemen.se" class="hover:text-white transition-colors">daryemen.se</a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+
+                <!-- Hours -->
+
+                <div>
+
+                    <h3 class="font-heading font-bold text-brand-yellow mb-4" data-i18n="footer_hours">Opening Hours</h3>
+
+                    <ul class="space-y-2 text-gray-400 text-sm">
+
+                        <li class="flex justify-between text-white font-bold"><span>Fri - Sat</span> <span>13:00 - 22:00</span></li>
+
+                        <li class="flex justify-between"><span>Sun - Thu</span> <span>13:00 - 20:00</span></li>
+
+                        <li class="flex justify-between mt-2 pt-2 border-t border-gray-700"><span>Takeout</span> <span>Until 21:00</span></li>
+
+                    </ul>
+
+                    <p class="text-xs text-gray-500 mt-4 italic">Updated 4 weeks ago</p>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-gray-500 text-xs text-center md:text-left">&copy; 2024 Dar Al Yemen Mandi. All rights reserved.</p>
+
+                <div class="flex gap-6 text-xs text-gray-500">
+
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- Floating Action Button (Mobile) -->
+
+    <a href="tel:0762221405" class="fixed bottom-6 right-6 lg:hidden z-50 bg-brand-green text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:bg-green-800 transition-all transform hover:scale-110 animate-pulse">
+
+        <i class="fa-solid fa-phone text-xl"></i>
+
+    </a>
+
+
+
+
+    <!-- JavaScript Logic -->
+
+    <script>
+
+        // Menu Data based on provided screenshots
+
+        const menuItems = [
+
+            {
+
+                id: 1,
+
+                category: 'mandi',
+
+                nameEn: 'Lamb Mandi',
+
+                nameAr: 'مندي لحم',
+
+                price: 189,
+
+                descEn: 'Traditional Yemeni dish with tender lamb and special spices.',
+
+                descAr: 'أكلة يمنية تقليدية مع لحم ضأن طري وبهارات خاصة.',
+
+                image: 'https://image.qwenlm.ai/public_source/e03a5b62-894e-4502-a344-9e49e65713f6/198f00db1-9e4c-492c-837a-f60bcf2a335f.png',
+
+                tag: 'Varje dag'
+
+            },
+
+            {
+
+                id: 2,
+
+                category: 'mandi',
+
+                nameEn: 'Chicken Mandi',
+
+                nameAr: 'مندي دجاج',
+
+                price: 169,
+
+                descEn: 'Chicken mandi cooked in a tandoor with special Yemeni spices.',
+
+                descAr: 'مندي دجاج مطبوخ في التنور مع بهارات يمنية خاصة.',
+
+                image: 'https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Varje dag'
+
+            },
+
+            {
+
+                id: 3,
+
+                category: 'zurbian',
+
+                nameEn: 'Lamb Zurbian',
+
+                nameAr: 'زربيان لحم',
+
+                price: 189,
+
+                descEn: 'Famous dish from Aden, cooked with special Adeni spices.',
+
+                descAr: 'أكلة مشهورة من عدن تطبخ مع بهارات عدنوية خاصة.',
+
+                image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Fre & Lör'
+
+            },
+
+            {
+
+                id: 4,
+
+                category: 'stew',
+
+                nameEn: 'Saltah',
+
+                nameAr: 'سلتة',
+
+                price: 179,
+
+                descEn: 'Traditional Yemeni stew with vegetables, meatballs, chicken, tuna.',
+
+                descAr: 'طبخة يمنية تقليدية تتكون من خضروات و كفتة و دجاج و تونة.',
+
+                image: 'https://image.qwenlm.ai/public_source/e03a5b62-894e-4502-a344-9e49e65713f6/162e71341-c573-4846-8a7d-0e56245bb541.png',
+
+                tag: 'Varje dag'
+
+            },
+
+            {
+
+                id: 5,
+
+                category: 'stew',
+
+                nameEn: 'Fahsa',
+
+                nameAr: 'فحسة',
+
+                price: 189,
+
+                descEn: 'Traditional dish with lamb meat, vegetables and spices.',
+
+                descAr: 'أكلة تقليدية تتكون من لحم ضأن و خضروات و بهارات.',
+
+                image: 'https://image.qwenlm.ai/public_source/e03a5b62-894e-4502-a344-9e49e65713f6/14c08f22d-89fd-4bfd-818b-e41ed5bed8b4.png',
+
+                tag: 'Varje dag'
+
+            },
+
+            {
+
+                id: 6,
+
+                category: 'rice',
+
+                nameEn: 'Lamb Kabsah',
+
+                nameAr: 'كبسة لحم',
+
+                price: 179,
+
+                descEn: 'Special rice dish with lamb and aromatic spices.',
+
+                descAr: 'أكلة أرز خاصة مع لحم الضأن والبهارات العطرية.',
+
+                image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Fre & Lör'
+
+            },
+
+            {
+
+                id: 7,
+
+                category: 'rice',
+
+                nameEn: 'Maqlubah',
+
+                nameAr: 'مقلوبة',
+
+                price: 179,
+
+                descEn: 'Rice & lamb cooked together with fried vegetables & potatoes.',
+
+                descAr: 'أرز و لحم يطبخون مع خضروات مقلية و بطاطس.',
+
+                image: 'https://images.unsplash.com/photo-1541518763669-27fef04b14ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Beställs innan'
+
+            },
+
+            {
+
+                id: 8,
+
+                category: 'stew',
+
+                nameEn: 'Aqdat Chicken',
+
+                nameAr: 'عقدة دجاج',
+
+                price: 139,
+
+                descEn: 'Special Yemeni dish with chicken and special spices.',
+
+                descAr: 'أكلة يمنية خاصة مع دجاج و بهارات خاصة.',
+
+                image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Beställs innan'
+
+            },
+
+            {
+
+                id: 9,
+
+                category: 'mandi',
+
+                nameEn: 'Lamb Biryani',
+
+                nameAr: 'برياني لحم',
+
+                price: 189,
+
+                descEn: 'A good dish consisting of rice, lamb pieces, potatoes, carrots & almonds on top.',
+
+                descAr: 'أكلة جيدة تتكون من أرز و قطع لحم و بطاطس و جزر و لوز في الأعلى.',
+
+                image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Beställs innan'
+
+            },
+
+            {
+
+                id: 10,
+
+                category: 'stew',
+
+                nameEn: 'Burmah',
+
+                nameAr: 'برمة',
+
+                price: 199,
+
+                descEn: 'Traditional Yemeni dish with lamb meat cooked on special charcoal.',
+
+                descAr: 'أكلة يمنية تقليدية مع لحم ضأن مطبوخ على فحم خاص.',
+
+                image: 'https://images.unsplash.com/photo-1544025162-d76690b67f61?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Beställs innan'
+
+            },
+
+            {
+
+                id: 11,
+
+                category: 'stew',
+
+                nameEn: 'Adani Aqda',
+
+                nameAr: 'عقدة عدن',
+
+                price: 159,
+
+                descEn: 'Special Yemeni dish with lamb and special spices. Served with okra bread.',
+
+                descAr: 'أكلة يمنية خاصة مع لحم ضأن و بهارات خاصة. تقدم مع خبز بامية.',
+
+                image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Beställs innan'
+
+            },
+
+            {
+
+                id: 12,
+
+                category: 'rice',
+
+                nameEn: 'Madhbi',
+
+                nameAr: 'مظبي',
+
+                price: 129,
+
+                descEn: 'Special dish with grilled chicken & special rice. One piece chicken breast.',
+
+                descAr: 'أكلة خاصة مع دجاج مشوي و أرز خاص. قطعة صدر دجاج.',
+
+                image: 'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+
+                tag: 'Varje dag'
+
+            }
+
+        ];
+
+
+
+
+        // Translations
+
+        const translations = {
+
+            en: {
+
+                home: "Home",
+
+                menu: "Menu",
+
+                story: "Our Story",
+
+                contact: "Contact",
+
+                hero_badge: "Authentic & Modern",
+
+                hero_title_1: "Taste Yemen",
+
+                hero_title_2: "in the heart of Göteborg",
+
+                hero_desc: "Experience the warmth of Yemeni hospitality with the simplicity of Scandinavian dining. Authentic spices, traditional recipes, modern presentation.",
+
+                cta_order: "Order Now",
+
+                cta_story: "Read Our Story",
+
+                stat_rating: "Rating",
+
+                stat_reviews: "Reviews",
+
+                stat_price: "Price Range",
+
+                badge_reviews: "In Göteborg",
+
+                feat_1_title: "Traditional Cooking",
+
+                feat_1_desc: "Clay pots & tandoor ovens",
+
+                feat_2_title: "Fresh Ingredients",
+
+                feat_2_desc: "Locally sourced in Sweden",
+
+                feat_3_title: "Outdoor Seating",
+
+                feat_3_desc: "Enjoy the weather",
+
+                feat_4_title: "Private Dining",
+
+                feat_4_desc: "For special occasions",
+
+                menu_badge: "Discover",
+
+                menu_title: "Our Menu",
+
+                menu_subtitle: "Authentic Yemeni Dishes",
+
+                cat_all: "All",
+
+                cat_mandi: "Mandi",
+
+                cat_zurbian: "Zurbian",
+
+                cat_stew: "Stews",
+
+                cat_rice: "Rice",
+
+                view_full_menu: "View Full Menu Online",
+
+                story_badge: "Our Heritage",
+
+                story_title: "Tradition Meets Modernity",
+
+                story_text: "At Dar AlYemen, we believe food is a language. We bring the ancient spices of the Arabian Peninsula to the clean, minimalist tables of Sweden. Our chefs use traditional clay pots (Madara) and tandoor ovens to ensure every bite tells a story of heritage.",
+
+                reservation_notice: "Reservations are required for dining in.",
+
+                story_feat_1: "Fresh Ingredients",
+
+                story_feat_2: "Traditional Cooking",
+
+                testimonials_title: "What Our Customers Say",
+
+                cta_section_title: "Ready to Taste Yemen?",
+
+                cta_section_desc: "Order now and experience authentic Yemeni cuisine delivered to your door.",
+
+                cta_order_now: "Order Now",
+
+                footer_desc: "Authentic Yemeni cuisine served with Scandinavian simplicity. Visit us for an unforgettable dining experience.",
+
+                footer_contact: "Contact Us",
+
+                footer_hours: "Opening Hours",
+
+                tag_everyday: "Every Day",
+
+                tag_weekend: "Fri & Sat",
+
+                tag_preorder: "Pre-order",
+
+                add_to_cart: "Add to Cart"
+
+            },
+
+            ar: {
+
+                home: "الرئيسية",
+
+                menu: "القائمة",
+
+                story: "قصتنا",
+
+                contact: "اتصل بنا",
+
+                hero_badge: "أصيل وعصري",
+
+                hero_title_1: "تذوق اليمن",
+
+                hero_title_2: "في قلب غوتنبرغ",
+
+                hero_desc: "اختبر دفء الضيافة اليمنية مع بساطة المائدة الاسكندنافية. بهارات أصيلة، وصفات تقليدية، وتقديم عصري.",
+
+                cta_order: "اطلب الآن",
+
+                cta_story: "اقرأ قصتنا",
+
+                stat_rating: "تقييم",
+
+                stat_reviews: "مراجعة",
+
+                stat_price: "نطاق السعر",
+
+                badge_reviews: "في غوتنبرغ",
+
+                feat_1_title: "طبخ تقليدي",
+
+                feat_1_desc: "أواني فخارية وأفران تنور",
+
+                feat_2_title: "مكونات طازجة",
+
+                feat_2_desc: "مصادر محلية في السويد",
+
+                feat_3_title: "جلوس في الهواء الطلق",
+
+                feat_3_desc: "استمتع بالطقس",
+
+                feat_4_title: "غرف خاصة",
+
+                feat_4_desc: "للمناسبات الخاصة",
+
+                menu_badge: "اكتشف",
+
+                menu_title: "قائمة الطعام",
+
+                menu_subtitle: "أطباق يمنية أصيلة",
+
+                cat_all: "الكل",
+
+                cat_mandi: "مندي",
+
+                cat_zurbian: "زربيان",
+
+                cat_stew: "يقاظ",
+
+                cat_rice: "أرز",
+
+                view_full_menu: "عرض القائمة الكاملة",
+
+                story_badge: "تراثنا",
+
+                story_title: "التقاليد تلتقي بالحداثة",
+
+                story_text: "في دار اليمن، نؤمن أن الطعام لغة. نحضر البهارات القديمة من شبه الجزيرة العربية إلى الموائد النظيفة والبسيطة في السويد. يستخدم طهاتنا الأواني الفخارية التقليدية (المدرة) وأفران التنور لضمان أن كل لقمة تحكي قصة تراث.",
+
+                reservation_notice: "الحجز مطلوب لتناول الطعام في المطعم.",
+
+                story_feat_1: "مكونات طازجة",
+
+                story_feat_2: "طبخ تقليدي",
+
+                testimonials_title: "ماذا يقول عملاؤنا",
+
+                cta_section_title: "جاهز لتذوق اليمن؟",
+
+                cta_section_desc: "اطلب الآن واستمتع بالمطبخ اليمني الأصيل يُسلم إلى باب منزلك.",
+
+                cta_order_now: "اطلب الآن",
+
+                footer_desc: "مطبخ يمني أصيل يقدم ببساطة اسكندنافية. زرنا لتجربة طعام لا تنسى.",
+
+                footer_contact: "اتصل بنا",
+
+                footer_hours: "ساعات العمل",
+
+                tag_everyday: "يومياً",
+
+                tag_weekend: "الجمعة والسبت",
+
+                tag_preorder: "طلب مسبق",
+
+                add_to_cart: "أضف للسلة"
+
+            }
+
+        };
+
+
+
+
+        let currentLang = 'en';
+
+        let cartCount = 0;
+
+
+
+
+        function toggleLanguage() {
+
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+
+            const html = document.documentElement;
+
+            const langLabel = document.getElementById('lang-label');
+
+            
+
+            if (currentLang === 'ar') {
+
+                html.setAttribute('dir', 'rtl');
+
+                html.setAttribute('lang', 'ar');
+
+                langLabel.textContent = 'EN';
+
+            } else {
+
+                html.setAttribute('dir', 'ltr');
+
+                html.setAttribute('lang', 'en');
+
+                langLabel.textContent = 'AR';
+
+            }
+
+            
+
+            updateContent();
+
+            renderMenu(currentFilter);
+
+        }
+
+
+
+
+        function updateContent() {
+
+            const t = translations[currentLang];
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+
+                const key = el.getAttribute('data-i18n');
+
+                if (t[key]) el.textContent = t[key];
+
+            });
+
+        }
+
+
+
+
+        // Menu Rendering
+
+        let currentFilter = 'all';
+
+
+
+
+        function renderMenu(filter) {
+
+            const grid = document.getElementById('menu-grid');
+
+            grid.innerHTML = '';
+
+            
+
+            const filteredItems = filter === 'all' 
+
+                ? menuItems 
+
+                : menuItems.filter(item => item.category === filter);
+
+
+
+
+            const t = translations[currentLang];
+
+
+
+
+            filteredItems.forEach(item => {
+
+                let tagText = '';
+
+                let tagClass = '';
+
+                
+
+                if(item.tag === 'Varje dag' || item.tag === 'varje dag') {
+
+                    tagText = t.tag_everyday;
+
+                    tagClass = 'bg-gray-200 text-gray-700';
+
+                } else if (item.tag === 'Fre & Lör' || item.tag === 'Fre & Lor') {
+
+                    tagText = t.tag_weekend;
+
+                    tagClass = 'bg-brand-blue/10 text-brand-blue';
+
+                } else {
+
+                    tagText = t.tag_preorder;
+
+                    tagClass = 'bg-brand-red/10 text-brand-red';
+
+                }
+
+
+
+
+                const isAr = currentLang === 'ar';
+
+                const name = isAr ? item.nameAr : item.nameEn;
+
+                const desc = isAr ? item.descAr : item.descEn;
+
+
+
+
+                const card = `
+
+                    <div class="food-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full">
+
+                        <div class="relative h-48 overflow-hidden">
+
+                            <img src="${item.image}" alt="${name}" class="w-full h-full object-cover transition-transform duration-700 hover:scale-110">
+
+                            <span class="absolute top-3 ${isAr ? 'right-3' : 'left-3'} ${tagClass} text-xs font-bold px-3 py-1 rounded-full shadow-sm">${tagText}</span>
+
+                            <button onclick="addToCart()" class="absolute bottom-3 ${isAr ? 'left-3' : 'right-3'} w-9 h-9 bg-white rounded-full shadow-md flex items-center justify-center text-brand-red hover:bg-brand-red hover:text-white transition-colors">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                        <div class="p-5 flex flex-col flex-grow">
+
+                            <div class="flex justify-between items-start mb-2">
+
+                                <h3 class="font-heading font-bold text-lg text-brand-charcoal leading-tight">${name}</h3>
+
+                                <span class="font-bold text-brand-red whitespace-nowrap">SEK ${item.price}</span>
+
+                            </div>
+
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-2 flex-grow font-body">${desc}</p>
+
+                            <button onclick="addToCart()" class="w-full py-2.5 border-2 border-brand-green text-brand-green rounded-lg font-heading text-sm font-semibold hover:bg-brand-green hover:text-white transition-colors flex items-center justify-center gap-2">
+
+                                <i class="fa-solid fa-cart-plus"></i>
+
+                                <span>${t.add_to_cart}</span>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+                grid.innerHTML += card;
+
+            });
+
+        }
+
+
+
+
+        // Add to Cart Function
+
+        function addToCart() {
+
+            cartCount++;
+
+            document.querySelector('.fa-basket-shopping').parentElement.querySelector('span').textContent = cartCount;
+
+            
+
+            // Show feedback
+
+            const btn = event.currentTarget;
+
+            const originalContent = btn.innerHTML;
+
+            btn.innerHTML = '<i class="fa-solid fa-check"></i> Added!';
+
+            btn.classList.add('bg-brand-green', 'text-white');
+
+            btn.classList.remove('border-brand-green', 'text-brand-green');
+
+            
+
+            setTimeout(() => {
+
+                btn.innerHTML = originalContent;
+
+                btn.classList.remove('bg-brand-green', 'text-white');
+
+                btn.classList.add('border-brand-green', 'text-brand-green');
+
+            }, 1500);
+
+        }
+
+
+
+
+        // Filter Logic
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+
+        filterBtns.forEach(btn => {
+
+            btn.addEventListener('click', () => {
+
+                filterBtns.forEach(b => {
+
+                    b.classList.remove('bg-brand-red', 'text-white', 'border-brand-red', 'shadow-md');
+
+                    b.classList.add('bg-white', 'text-gray-600', 'border-gray-200', 'shadow-sm');
+
+                });
+
+                btn.classList.remove('bg-white', 'text-gray-600', 'border-gray-200', 'shadow-sm');
+
+                btn.classList.add('bg-brand-red', 'text-white', 'border-brand-red', 'shadow-md');
+
+                
+
+                currentFilter = btn.getAttribute('data-category');
+
+                renderMenu(currentFilter);
+
+            });
+
+        });
+
+
+
+
+        // Mobile Menu
+
+        function toggleMobileMenu() {
+
+            const menu = document.getElementById('mobile-menu');
+
+            menu.classList.toggle('hidden');
+
+        }
+
+
+
+
+        // Initialize
+
+        renderMenu('all');
+
+
+
+
+        // Navbar Scroll Effect
+
+        window.addEventListener('scroll', () => {
+
+            const nav = document.getElementById('navbar');
+
+            if (window.scrollY > 50) {
+
+                nav.classList.add('shadow-md');
+
+                nav.classList.replace('py-3', 'py-2');
+
+            } else {
+
+                nav.classList.remove('shadow-md');
+
+                nav.classList.replace('py-2', 'py-3');
+
+            }
+
+        });
+
+
+
+
+        // Close mobile menu on link click
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                document.getElementById('mobile-menu').classList.add('hidden');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
