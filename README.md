@@ -21,15 +21,15 @@ A modern, responsive, and multilingual web application for **Dar Al Yemen Mandi*
 
 Because this project is built with Vanilla HTML/JS and uses a CDN for styling, there is no build step or package installation required! 
 
-Simply open `daralyemen.html` in any modern web browser to view the application:
+Simply open `index.html` in any modern web browser to view the application:
 
 ```bash
-open daralyemen.html
+open index.html
 ```
 
 ## Project Structure
 
-- `daralyemen.html`: The core application file containing all structure, scripts, data, and styling configuration.
+- `index.html`: The core application file containing all structure, scripts, data, and styling configuration.
 - `burmah.png`, `daralyemenlogo.png`: Local image assets for the brand and menu.
 - `README.md`: Project documentation.
 - `*.docx`: Brand guidelines, video scripts, and user persona research.
